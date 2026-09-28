@@ -1,0 +1,6 @@
+flask
+numpy
+pandas
+requests
+render_template
+sqlite3                  
