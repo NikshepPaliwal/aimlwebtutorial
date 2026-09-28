@@ -1,0 +1,104 @@
+
+<html>
+<head>
+<title>Web Tutorial</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+  
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+<table>
+  <tr>
+    <th>Roll No</th>
+    <th>Stud. Name</th>
+    <th>Class</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Satpal</td>
+    <td>AIML with IIT Ropar</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Anju</td>
+    <td>AIML with IIT Ropar</td>
+  </tr>
+<tr>
+  <td>3</td>
+  <td> Priya</td>
+  <td>AIML with IIT Ropar</td>
+</tr>
+</table>
+<br>
+<h2>List of Students in Unordered LIst</h2>
+<ul>
+  <li>Satpal</li>
+  <li>Anju</li>
+  <li>Priya</li>
+  <li>Rohit</li>
+</ul>
+
+<br>
+<h2>List of Students in Ordered List</h2>
+<ol>
+  <li>Satpal</li>
+  <li>Anju</li>
+  <li>Priya</li>
+  <li>Rohit</li>
+</ol>
+
+
+<br>
+<dl>
+  
+  <dt>Satpal</dt>
+  <dd>Roll No: 1</dd>
+  <dd>Class: AIML with IIT Ropar</dd>
+
+  <dt>Anju</dt>
+  <dd>Roll No: 2</dd>
+  <dd>Class: AIML with IIT Ropar</dd>
+
+  <dt>Priya</dt>
+  <dd>Roll No: 3</dd>
+  <dd>Class: AIML with IIT Ropar</dd>
+</dl>
+
+
+<div id = "Python">
+  <p>Python is a high-level programming language known for its simple and readable syntax. It has the following features: Allows writing clean code with fewer lines. Supports multiple programming paradigms including object-oriented, functional and procedural programming. Widely used in web development, automation, data analysis, artificial intelligence and many other fields. Dynamically typed and has automatic garbage collection</p>
+</div>
+
+<div id = "flask">
+  <p>Flask is a lightweight web framework used to build web applications and APIs.<br> It follows a minimal design and provides core features like routing, request handling and template rendering while allowing developers to add extensions as needed. It is widely used for building small to medium web applications due to its simplicity and flexibility.</p>
+</div>
+
+<button><a href="{{ url_for('about') }}">About Us</a></button>
+<button><a href="{{ url_for('login') }}">Login</a></button>
+</body>
+</html>

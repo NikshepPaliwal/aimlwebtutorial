@@ -1,0 +1,71 @@
+
+<html>
+<head>
+<title>About Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-container">
+    
+
+<div  class="divSection">
+  <img id = "course" src="4.png" alt="HTML5 Icon">
+</div>
+
+ <div class="divSection" style="background-color:#FFC0C7;">
+  <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 700,000 inhabitants.</p>
+</div>
+
+<div  class="divSection"style="background-color:#D9EEE1;">
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has over 4 million inhabitants.</p>
+</div>
+
+</div>
+
+<!-- 
+<label for="fname">First Name:</label>
+<input type="text" name="fname" placeholder="Enter your fname">
+<label for="lname">Last Name:</label>
+<input type="text" name="lname" placeholder="Enter your lname">
+<button onclick="alert('submitted!')">Click Me</button> -->
+
+<h1 id="hello">Hello</h1> 
+
+<!-- Removed action and method so it handles locally without refreshing -->
+<form onsubmit="return false;"> 
+  First name: <input type="text" id="fname" name="fname"><br><br> 
+  Last name: <input type="text" id="lname" name="lname"><br><br> 
+  Full name: <input type="text" id="fullName" name="fullName"><br><br>
+  
+  <!-- Added an onclick event to trigger the greeting function -->
+  <button type="button" onclick="displayGreeting()">Submit</button> 
+  <button type="reset" onclick="clearGreeting()">Reset Form</button> 
+</form> 
+
+<script> 
+function displayGreeting() {
+  // 1. Get the values from the input fields
+  var firstName = document.getElementById("fname").value;
+  var lastName = document.getElementById("lname").value;
+  var combinedName = firstName + " " + lastName;
+  
+  // 2. Update the H1 text
+  document.getElementById("hello").innerHTML = "Hello " + combinedName;
+  
+  // 3. Update the Full Name text box automatically
+  document.getElementById("fullName").value = combinedName;
+}
+
+function clearGreeting() {
+  // Resets the header text back to default when reset is clicked
+  document.getElementById("hello").innerHTML = "Hello";
+}
+</script>
+
+</body>
+</html>

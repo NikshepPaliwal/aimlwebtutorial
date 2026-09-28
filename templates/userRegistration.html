@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Registration</title>
+        <style>
+            div{
+                background-color: aliceblue;
+                border-radius: 10px;
+                border: 1px solid black;
+                height: 300px;
+                width: 300px;
+                padding: 50px;
+                margin-left: 500px;
+                
+            }
+            h3{
+                text-align: center;
+            }
+        </style>
+    </head>
+<body>
+    
+    <div>
+        <h3>User Registration</h3>
+        <form action="{{ url_for('dashboard') }}" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" required><br><br>
+        <input type="submit" value="Submit"><br><br>
+      
+    </form>
+    </div>
+    
+</body>
+</html>

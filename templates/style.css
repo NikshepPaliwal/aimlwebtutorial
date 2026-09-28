@@ -1,0 +1,69 @@
+.flask{
+        color:red;
+        font-size:32px;
+        text-align:center;
+    }
+    .python{
+        color:blue;
+        font-size:24px;
+        text-align:left;
+    }
+    .course{
+        width: 200px;
+        height: 200px;
+    }
+    .logo{
+        width: 200px;
+        height: 200px;
+    }
+
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+
+#Python{
+    height: 150px;
+    width: 500px;
+    background-color: lightblue;
+    margin: 32px;
+    padding-left:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#flask{
+    height: 150px;
+    width: 500px;
+    background-color: lightgreen;
+    margin-left: 600px;
+    margin-top: -225px;
+    padding-left:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  background-color: #2196F3;
+  padding: 10px;
+  margin: 32px;
+}
+
+#course{
+    width: 100%;
+    height: 200px;
+}
+
+.divSection{
+    text-align: center;
+   margin: 10px;
+    font-size: 12px;
+}
